@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBLunch - Crie sua conta!</title>
+</head>
+
+<body>
+    <main class="container flex flex--coluna flex--centro">
+        <div class="cadastro-cabecalho">
+            <h1 class="cadastro-cabecalho__titulo">DBLunch</h1>
+        </div>
+        <section class="cartao">
+            <h2 class="cartao__titulo">Faça seu cadastro</h2>
+            <form action="./cadastro_user_concluido.html" class="formulario flex flex--coluna">
+                <fieldset>
+                    <legend class="formulario__legenda">Informações básicas</legend>
+                    <div class="input">
+                        <input name="nome" id="nome" class="input__field" type="text" placeholder="Nome"
+                            data-tipo="nome" required>
+                        <label class="input__label" for="nome"></label>
+                        <span class="input__error"></span>
+                    </div>
+                    <div class="input">
+                        <input name="email" id="email" class="input__field" type="email" placeholder="Email"
+                            data-tipo="email" required>
+                        <label class="input__label" for="email"></label>
+                        <span class="input__error"></span>
+                    </div>
+                    <div class="input">
+                        <input name="senha" id="senha" class="input__field" type="password" placeholder="Senha"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
+                            title="A senha deve conter entre 8 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos."
+                            size=8 maxlength="12" data-tipo="senha" required>
+                        <label class="input__label" for="senha"></label>
+                        <span class="input__error"></span>
+                    </div>
+                </fieldset>
+                <button class="btn btn-primary">Cadastrar</a>
+            </form>
+        </section>
+    </main>
+    <script src="./JS/jquery.js"></script>
+    <script src="./JS/validaUsuario.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Purple+Purse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    background-color: #ecf0f1;
+}
+
+.title {
+    font-family: 'Purple Purse', cursive;
+    color: #fff;
+    font-size: 45px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.title-create {
+    font-family: 'Purple Purse', cursive;
+    color: #AF3F3F;
+    font-size: 35px;
+}
+
+.description {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 15px
+}
+
+.description-create {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #A2A2A2;
+}
+
+.form {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+
+}
+
+.form input {
+    height: 45px;
+    border: none;
+    background-color: #ecf0f1;
+    margin: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fff;
+    display: flex;
+    border-radius: 16px;
+    box-shadow: 5px 5px 2px 1px rgba(132, 132, 133, 0.2);
+    width: 900px;
+    height: 400px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.first-column {
+    text-align: center;
+    flex: 1 0 auto;
+    z-index: 10;
+}
+
+.second-column {
+    flex: 2 0 auto;
+
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    width: 150px;
+    padding: 10px 50px;
+    cursor: pointer;    
+    align-self: center;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #AF3F3F;
+    border: 1px solid #fff;
+}
+
+.btn-primary:hover {
+    background-color: #ecf0f1;
+    color: #AF3F3F;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: #ecf0f1;
+}
+
+.container::before {
+    content: "";
+   position: absolute;
+   background-color: #AF3F3F;
+   width: 40%;
+   height: 100%;
+   border-radius: 16px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}*\
