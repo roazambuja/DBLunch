@@ -2,6 +2,7 @@ $(function () {
   const inputs = $(".input__field");
 
   $.each(inputs, function (index, input) {
+    $(input).val("");
     $(input).blur(function () {
       valida(input);
     });
