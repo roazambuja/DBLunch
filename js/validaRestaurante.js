@@ -1,5 +1,5 @@
 $(function () {
-  const inputs = $(".input__campo");
+  const inputs = $(".input__field");
 
   $.each(inputs, function (index, input) {
     $(input).blur(function () {
@@ -17,12 +17,12 @@ function valida(input) {
 
   let div = $(input).parent().get(0);
   if (input.checkValidity()) {
-    $(div).removeClass("input__invalido");
-    $($(div).children(".input__erro").get(0)).text("");
+    $(div).removeClass("input__invalid");
+    $($(div).children(".input__error").get(0)).text("");
   } else {
-    $(div).addClass("input__invalido");
+    $(div).addClass("input__invalid");
 
-    $($(div).children(".input__erro").get(0)).text(
+    $($(div).children(".input__error").get(0)).text(
       mostraMensagemDeErro(tipoDeInput, input)
     );
   }
@@ -96,13 +96,18 @@ async function validarCEP(input) {
       .then((response) => response.json())
       .then((data) => {
         if (data.erro === true) {
-          input.setCustomValidity("Não foi possível buscar o CEP.");
+          input.setCustomValidity("CEP inválido.");
+          preencheCamposComCEP({
+            logradouro: "",
+            localidade: "",
+            bairro: "",
+          });
           return;
         } else {
           input.setCustomValidity("");
         }
 
-        // preencheCamposComCEP(data);
+        preencheCamposComCEP(data);
         return;
       })
       .catch((error) => {
@@ -110,19 +115,35 @@ async function validarCEP(input) {
       });
 
     let div = $(input).parent().get(0);
-    $($(div).children(".input__erro").get(0)).text(
+    $($(div).children(".input__error").get(0)).text(
       mostraMensagemDeErro("cep", input)
     );
   }
 }
 
-// function preencheCamposComCEP(data) {
-//   const logradouro = document.querySelector('[data-tipo="logradouro"]');
-//   const cidade = document.querySelector('[data-tipo="cidade"]');
-//   const estado = document.querySelector('[data-tipo="estado"]');
+function preencheCamposComCEP(data) {
+  const logradouro = $('[data-tipo="logradouro"]');
+  const cidade = $('[data-tipo="cidade"]');
+  const bairro = $('[data-tipo="bairro"]');
 
-//   logradouro.value = data.logradouro;
-//   cidade.value = data.localidade;
+  $(logradouro.get(0)).attr("readonly", false);
+  $(cidade.get(0)).attr("readonly", false);
+  $(bairro.get(0)).attr("readonly", false);
 
-//   estado.value = data.uf;
-// }
+  $(logradouro.get(0)).val(data.logradouro);
+  $(cidade.get(0)).val(data.localidade);
+  $(bairro.get(0)).val(data.bairro);
+
+  // travar os campos já preenchidos pelo viacep
+  if ($(logradouro.get(0)).val() != "") {
+    $(logradouro.get(0)).attr("readonly", true);
+  }
+
+  if ($(cidade.get(0)).val() != "") {
+    $(cidade.get(0)).attr("readonly", true);
+  }
+
+  if ($(bairro.get(0)).val() != "") {
+    $(bairro.get(0)).attr("readonly", true);
+  }
+}
