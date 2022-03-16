@@ -71,7 +71,7 @@ const mensagensDeErro = {
     valueMissing: "O campo de cidade não pode estar vazio",
   },
   numero: {
-    valueMissing: "O campo de numero não pode estar vazio",
+    valueMissing: "O campo de número não pode estar vazio",
     patternMismatch: "Você deve digitar apenas números",
   },
 };
