@@ -1,8 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Purple+Purse&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-
 body {
-  background-color: #ecf0f1;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -10,14 +6,8 @@ body {
   width: 100vw;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .register-restaurant {
-  background-color: #fff;
+  background-color: var(--branco);
   display: flex;
   flex-direction: column;
   border-radius: 16px;
@@ -31,7 +21,7 @@ body {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   width: 100%;
-  background-color: #af3f3f;
+  background-color: var(--principal);
   border-radius: 16px 16px 0 0;
   display: flex;
   flex-direction: column;
@@ -41,13 +31,13 @@ body {
 .register-restaurant__header--title {
   text-transform: capitalize;
   font-family: "Purple Purse", cursive;
-  color: #fff;
+  color: var(--branco);
   font-weight: normal;
 }
 
 .register-restaurant__header--subtitle {
   font-family: "Poppins", sans-serif;
-  color: #ecf0f1;
+  color: var(--cinza);
   font-weight: normal;
 }
 
@@ -67,7 +57,7 @@ body {
 
 .input__field {
   border: none;
-  background-color: #ecf0f1;
+  background-color: var(--cinza);
   margin-bottom: 0.5rem;
   padding: 1rem;
 }
@@ -76,24 +66,24 @@ body {
   font-family: "Poppins", sans-serif;
   border-radius: 15px;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--branco);
   font-size: 1rem;
   width: 100%;
   padding: 10px 50px;
   cursor: pointer;
   align-self: center;
-  background-color: #af3f3f;
+  background-color: var(--principal);
   border: none;
 }
 
 .form__button:hover {
-  background-color: #ecf0f1;
-  color: #af3f3f;
+  background-color: var(--cinza);
+  color: var(--principal);
   font-weight: bold;
 }
 
 .input__error {
-  color: red;
+  color: var(--erro);
   font-size: 0.8rem;
 }
 

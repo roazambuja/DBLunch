@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Purple+Purse&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+:root {
+  --principal: #af3f3f;
+  --branco: #fff;
+  --cinza: #ecf0f1;
+  --preto: #000;
+  --erro: #ff0000;
+}
+
+body {
+  background-color: var(--cinza);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
