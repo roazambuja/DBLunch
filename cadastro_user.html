@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./CSS/cadastroUser.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DBLunch - Crie sua conta!</title>
     <link rel="stylesheet" href="./CSS/estilos.css">
@@ -11,13 +12,13 @@
 <body>
     <main class="container flex flex--coluna flex--centro">
         <div class="cadastro-cabecalho">
-            <h1 class="cadastro-cabecalho__titulo">DBLunch</h1>
+            <h1 class="title-cad cadastro-cabecalho__titulo">DBLunch</h1>
+            <img src="./img/Restaurante.png" class="img-restaurante">
         </div>
         <section class="cartao">
             <h2 class="cartao__titulo">Faça seu cadastro</h2>
             <form action="./cadastro_user_concluido.html" class="formulario flex flex--coluna">
-                <fieldset>
-                    <legend class="formulario__legenda">Informações básicas</legend>
+                    <legend class="formulario formulario__legenda">Informações básicas</legend>
                     <div class="input">
                         <input name="nome" id="nome" class="input__field" type="text" placeholder="Nome"
                             data-tipo="nome" required>
@@ -38,7 +39,6 @@
                         <label class="input__label" for="senha"></label>
                         <span class="input__error"></span>
                     </div>
-                </fieldset>
                 <button class="btn btn-primary">Cadastrar</a>
             </form>
         </section>
