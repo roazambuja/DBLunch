@@ -1,19 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Purple+Purse&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-
 body {
-  background-color: #ecf0f1;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100vw;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 .container {
@@ -27,9 +17,9 @@ body {
 
 .container__link {
   align-self: center;
-  background-color: #af3f3f;
+  background-color: var(--principal);
   border-radius: 15px;
-  color: #fff;
+  color: var(--branco);
   font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
   font-weight: bold;
@@ -39,12 +29,12 @@ body {
   text-decoration: none;
   text-align: center;
   width: 100%;
-  border: 1px solid #af3f3f;
+  border: 1px solid var(--principal);
 }
 
 .container__link:hover {
-  background-color: #ecf0f1;
-  color: #af3f3f;
+  background-color: var(--cinza);
+  color: var(--principal);
   font-weight: bolder;
 }
 
@@ -55,7 +45,7 @@ body {
 }
 
 .container__title {
-  color: #af3f3f;
+  color: var(--principal);
 }
 
 @media screen and (min-width: 0) {
