@@ -4,9 +4,23 @@
 <head>
     <meta charset="UTF-8" />
     <title>DBLunch | Votar</title>
+    <link rel="stylesheet" href="./CSS/votacao.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
 
 <body>
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Votação</h1>
+        <p class="cabecalho__texto">Vote no seu restaurante favorito!</p>
+    </header>
+    <main class="container">
+        <form class="formulario" action="voto_cadastrado.html">
+            <button class='formulario__submit' type='submit'>Votar</button>
+        </form>
+        <span class="erro"></span>
+    </main>
+    <script src="./JS/jquery.js"></script>
+    <script src="./JS/votacao.js" type="module"></script>
 </body>
 
 </html>
