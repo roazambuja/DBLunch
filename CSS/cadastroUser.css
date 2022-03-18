@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Purple+Purse&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+body {
+  background-color: #ecf0f1;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #fff;
+  display: flex;
+  border-radius: 16px;
+  box-shadow: 5px 5px 2px 1px rgba(132, 132, 133, 0.2);
+  width: 900px;
+  height: 400px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cadastro-cabecalho {
+  font-family: "Purple Purse", cursive;
+  color: #af3f3f;
+  font-size: 35px;
+  font-weight: normal;
+  text-transform: capitalize;
+  margin-left: 100px;
+}
+
+.img-restaurante {
+  max-width: 200px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+}
+
+.cartao__titulo {
+  font-family: "Purple Purse", cursive;
+  color: #af3f3f;
+  font-size: 35px;
+}
+
+.cartao {
+  margin-right: 70px;
+}
+
+legend {
+  font-family: "Poppins", sans-serif;
+  margin-left: 8px;
+}
+
+.input {
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  display: flex;
+  width: 55%;
+}
+
+.formulario input {
+  height: 45px;
+  border: none;
+  background-color: #ecf0f1;
+  margin: 8px;
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10px;
+  width: 150px;
+  padding: 10px 50px;
+  cursor: pointer;
+  align-self: center;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #af3f3f;
+  border: 1px solid #fff;
+}
+
+.btn-primary:hover {
+  background-color: #ecf0f1;
+  color: #af3f3f;
+}
