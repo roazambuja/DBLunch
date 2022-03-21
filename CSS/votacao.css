@@ -1,0 +1,142 @@
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}
+
+.cabecalho {
+  margin-top: 2rem;
+  background-color: var(--principal);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  border-radius: 16px 16px 0 0;
+}
+
+.cabecalho__titulo {
+  color: var(--branco);
+  font-family: "Purple Purse", cursive;
+  font-weight: normal;
+}
+
+.cabecalho__texto {
+  font-family: "Poppins", sans-serif;
+  color: var(--branco);
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.formulario__linha {
+  display: flex;
+  align-items: center;
+  background-color: var(--branco);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.formulario__input {
+  margin-right: 1rem;
+}
+
+.formulario__restaurante--titulo {
+  font-family: "Poppins", sans-serif;
+  color: var(--principal);
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.formulario__restaurante--descricao {
+  font-family: "Poppins", sans-serif;
+  color: var(--preto);
+  font-size: 1rem;
+}
+
+.formulario__restaurante--endereco {
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.fa {
+  color: var(--principal);
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding-left: 0.5rem;
+}
+
+.formulario__submit {
+  font-family: "Poppins", sans-serif;
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: var(--branco);
+  font-size: 1rem;
+  width: 100%;
+  padding: 10px 50px;
+  cursor: pointer;
+  align-self: center;
+  background-color: var(--principal);
+  border: 1px solid var(--principal);
+}
+
+.formulario__submit:hover {
+  background-color: var(--cinza);
+  color: var(--principal);
+  font-weight: bold;
+}
+
+.erro {
+  color: var(--erro);
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 0) {
+  .cabecalho,
+  .formulario {
+    width: 90%;
+  }
+
+  .cabecalho__titulo {
+    font-size: 2.5rem;
+  }
+
+  .cabecalho__texto {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cabecalho,
+  .formulario {
+    width: 70%;
+  }
+  .cabecalho__titulo {
+    font-size: 3rem;
+  }
+  .cabecalho__texto {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .cabecalho,
+  .formulario {
+    width: 50%;
+  }
+}

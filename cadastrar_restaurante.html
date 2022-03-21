@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>DBLunch | Cadastrar restaurante</title>
+  <link rel="stylesheet" href="./CSS/cadastroRestaurante.css">
+  <link rel="stylesheet" href="./CSS/estilos.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__title">Cadastrar restaurante</h1>
+    <h2 class="header__subtitle">Cadastre seu restaurante favorito!</h2>
+  </header>
+  <main class="register-restaurant">
+    <form class="form" action="./cadastro_restaurante_concluido.html">
+      <div class="input">
+        <label class="input__label" for="nomeRestaurante">Nome do restaurante</label>
+        <input type="text" class="input__field" name="nome" id="nomeRestaurante" placeholder="Nome do restaurante"
+          data-tipo="nomeRestaurante" required />
+        <span class="input__error"></span>
+      </div>
+
+      <div class="input">
+        <label class="input__label" for="site">Site</label>
+        <input type="text" class="input__field" name="site" id="site" placeholder="Site"
+          pattern="^[a-zA-Z0-9-_]+[:./\\]+([a-zA-Z0-9 -_./:=&'?%+@#$!])+$" data-tipo="site" />
+        <span class="input__error"></span>
+      </div>
+      <div class="input">
+        <label class="input__label" for="descricao">Descrição</label>
+        <textarea class="input__field" name="descricao" id="descricao" placeholder="Descrição" data-tipo="descricao"
+          required></textarea>
+        <span class="input__error"></span>
+      </div>
+      <div class="input">
+        <label class="input__label" for="cep">CEP</label>
+        <input type="text" class="input__field" name="cep" id="cep" placeholder="CEP" pattern="[\d]{5}-?[\d]{3}"
+          data-tipo="cep" required />
+        <span class="input__error"></span>
+      </div>
+
+      <div class="input">
+        <label class="input__label" for="cidade">Cidade</label>
+        <input type="text" class="input__field" name="cidade" id="cidade" placeholder="Cidade" data-tipo="cidade"
+          required />
+        <span class="input__error"></span>
+      </div>
+      <div class="input">
+        <label class="input__label" for="bairro">Bairro</label>
+        <input type="text" class="input__field" name="bairro" id="bairro" placeholder="Bairro" data-tipo="bairro"
+          required />
+        <span class="input__error"></span>
+      </div>
+      <div class="input">
+        <label class="input__label" for="logradouro">Logradouro</label>
+        <input type="text" class="input__field" name="logradouro" id="logradouro" placeholder="Logradouro"
+          data-tipo="logradouro" required />
+        <span class="input__error"></span>
+      </div>
+      <div class="input">
+        <label class="input__label" for="numero">Número</label>
+        <input type="number" class="input__field" name="numero" id="numero" placeholder="Número" pattern="\d*" min="0"
+          data-tipo="numero" required />
+        <span class="input__error"></span>
+      </div>
+
+      <button type="submit" class="form__button"> Realizar cadastro </button>
+    </form>
+  </main>
+
+  <script src="./JS/jquery.js"></script>
+  <script src="./JS/validaRestaurante.js"></script>
+</body>
+
+</html>

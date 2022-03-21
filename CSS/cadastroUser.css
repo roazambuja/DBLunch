@@ -1,0 +1,113 @@
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  background-color: var(--branco);
+  display: flex;
+  border-radius: 16px;
+  box-shadow: 5px 5px 2px 1px rgba(132, 132, 133, 0.2);
+  height: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cadastro-cabecalho {
+  font-family: "Purple Purse", cursive;
+  color: var(--principal);
+  font-size: 35px;
+  font-weight: normal;
+  text-transform: capitalize;
+  margin-left: 100px;
+}
+
+.img-restaurante {
+  max-width: 200px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+}
+
+.cartao__titulo {
+  font-family: "Purple Purse", cursive;
+  color: var(--principal);
+  font-size: 35px;
+}
+
+.cartao {
+  margin-right: 70px;
+}
+
+legend {
+  font-family: "Poppins", sans-serif;
+  margin-left: 8px;
+}
+
+.input {
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  display: flex;
+  width: 55%;
+}
+
+.formulario input {
+  height: 45px;
+  border: none;
+  background-color: var(--cinza);
+  margin: 8px;
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: var(--branco);
+  font-size: 10px;
+  width: 150px;
+  padding: 10px 50px;
+  cursor: pointer;
+  align-self: center;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--principal);
+  border: 1px solid var(--branco);
+}
+
+.btn-primary:hover {
+  background-color: var(--cinza);
+  color: var(--principal);
+}
+
+.input__error {
+  color: var(--erro);
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 0) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 70%;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 50%;
+    flex-direction: row;
+  }
+}
