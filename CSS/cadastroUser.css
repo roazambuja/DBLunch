@@ -12,7 +12,6 @@ body {
   display: flex;
   border-radius: 16px;
   box-shadow: 5px 5px 2px 1px rgba(132, 132, 133, 0.2);
-  /* width: 900px; */
   height: auto;
   padding-top: 2rem;
   padding-bottom: 2rem;

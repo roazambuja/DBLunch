@@ -15,6 +15,7 @@ $(function () {
   $(mostraVencedor).text(vencedor.nome);
   if (vencedor.site) {
     $(mostraVencedor).attr("href", vencedor.site);
+    $(mostraVencedor).attr("target", "_blank");
   }
   $(".vencedorVotacao").append(mostraVencedor);
 });
