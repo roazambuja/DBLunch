@@ -11,7 +11,7 @@ export const restaurantes = [
       logradouro: "Avenida Bento Gonçalves",
       numero: 4169,
     },
-    votos: 0,
+    votos: 3,
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ export const restaurantes = [
       logradouro: "Avenida Ipiranga",
       numero: 6681,
     },
-    votos: 0,
+    votos: 4,
   },
   {
     id: 3,
@@ -39,6 +39,6 @@ export const restaurantes = [
       logradouro: "Avenida Ipiranga",
       numero: 6111,
     },
-    votos: 0,
+    votos: 5,
   },
 ];
