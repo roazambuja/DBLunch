@@ -12,7 +12,7 @@ body {
   display: flex;
   border-radius: 16px;
   box-shadow: 5px 5px 2px 1px rgba(132, 132, 133, 0.2);
-  width: 900px;
+  /* width: 900px; */
   height: auto;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -91,4 +91,24 @@ legend {
 .input__error {
   color: var(--erro);
   font-size: 0.8rem;
+}
+
+@media screen and (min-width: 0) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 70%;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 50%;
+    flex-direction: row;
+  }
 }

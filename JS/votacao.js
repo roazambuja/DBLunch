@@ -9,7 +9,7 @@ $(function () {
 function gerarLista() {
   console.log(restaurantes);
   restaurantes.map((restaurante) => {
-    var dadosRestaurante = $("<div formulario__restaurante/>");
+    var dadosRestaurante = $("<div class='formulario__restaurante'/>");
     var nome = $("<h2 class='formulario__restaurante--titulo'/>");
     var endereco = $("<p class='formulario__restaurante--endereco'/>");
     var descricao = $("<p class='formulario__restaurante--descricao'/>");
@@ -35,15 +35,17 @@ function gerarLista() {
 
     $(linha)
       .append(
-        $("<input class='formulario__input' required>").prop({
+        $("<input required>").attr({
           type: "radio",
           name: "restaurante",
+          id: `${restaurante.id}`,
           value: `${restaurante.id}`,
+          class: "formulario__input",
         })
       )
       .append(
         $("<label></label>")
-          .prop({
+          .attr({
             for: `${restaurante.id}`,
           })
           .html(dadosRestaurante)

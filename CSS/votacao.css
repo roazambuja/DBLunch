@@ -1,8 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Purple+Purse&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-
 body {
-  background-color: #ecf0f1;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -10,15 +6,9 @@ body {
   width: 100vw;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .cabecalho {
   margin-top: 2rem;
-  background-color: #af3f3f;
+  background-color: var(--principal);
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -29,16 +19,15 @@ body {
 }
 
 .cabecalho__titulo {
-  color: #fff;
+  color: var(--branco);
   font-family: "Purple Purse", cursive;
   font-weight: normal;
-  font-size: 3rem;
 }
 
 .cabecalho__texto {
   font-family: "Poppins", sans-serif;
-  color: #fff;
-  font-size: 1.2rem;
+  color: var(--branco);
+  text-align: center;
 }
 
 .container {
@@ -51,14 +40,10 @@ body {
   margin-top: 1rem;
 }
 
-.formulario {
-  width: 50%;
-}
-
 .formulario__linha {
   display: flex;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--branco);
   margin-bottom: 1rem;
   padding: 1rem;
   border-radius: 10px;
@@ -71,14 +56,14 @@ body {
 
 .formulario__restaurante--titulo {
   font-family: "Poppins", sans-serif;
-  color: #af3f3f;
+  color: var(--principal);
   font-size: 1.5rem;
   font-weight: normal;
 }
 
 .formulario__restaurante--descricao {
   font-family: "Poppins", sans-serif;
-  color: black;
+  color: var(--preto);
   font-size: 1rem;
 }
 
@@ -90,7 +75,7 @@ body {
 }
 
 .fa {
-  color: #af3f3f;
+  color: var(--principal);
   font-size: 1.2rem;
   text-decoration: none;
   padding-left: 0.5rem;
@@ -100,23 +85,58 @@ body {
   font-family: "Poppins", sans-serif;
   border-radius: 15px;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--branco);
   font-size: 1rem;
   width: 100%;
   padding: 10px 50px;
   cursor: pointer;
   align-self: center;
-  background-color: #af3f3f;
-  border: 1px solid #af3f3f;
+  background-color: var(--principal);
+  border: 1px solid var(--principal);
 }
 
 .formulario__submit:hover {
-  background-color: #ecf0f1;
-  color: #af3f3f;
+  background-color: var(--cinza);
+  color: var(--principal);
   font-weight: bold;
 }
 
 .erro {
-  color: red;
+  color: var(--erro);
   margin-top: 1rem;
+}
+
+@media screen and (min-width: 0) {
+  .cabecalho,
+  .formulario {
+    width: 90%;
+  }
+
+  .cabecalho__titulo {
+    font-size: 2.5rem;
+  }
+
+  .cabecalho__texto {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cabecalho,
+  .formulario {
+    width: 70%;
+  }
+  .cabecalho__titulo {
+    font-size: 3rem;
+  }
+  .cabecalho__texto {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .cabecalho,
+  .formulario {
+    width: 50%;
+  }
 }
