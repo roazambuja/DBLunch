@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Purple+Purse&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+body {
+    background-color: #ecf0f1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.title {
+    color: #af3f3f;
+    font-family: "Purple Purse", cursive;
+    font-weight: normal;
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.description {
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.ganhadorVotacao {
+  font-family: "Poppins", sans-serif;
+  color: #af3f3f;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
