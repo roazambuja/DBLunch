@@ -10,17 +10,17 @@ body {
   background-color: var(--branco);
   display: flex;
   flex-direction: column;
-  border-radius: 16px;
+  border-radius: 0 0 16px 16px;
   height: auto;
   justify-content: center;
   align-items: center;
-  margin: 3rem 0 3rem 0;
+  margin-bottom: 1rem;
 }
 
-.register-restaurant__header {
+.header {
+  margin-top: 2rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  width: 100%;
   background-color: var(--principal);
   border-radius: 16px 16px 0 0;
   display: flex;
@@ -28,14 +28,14 @@ body {
   align-items: center;
 }
 
-.register-restaurant__header--title {
+.header__title {
   text-transform: capitalize;
   font-family: "Purple Purse", cursive;
   color: var(--branco);
   font-weight: normal;
 }
 
-.register-restaurant__header--subtitle {
+.header__subtitle {
   font-family: "Poppins", sans-serif;
   color: var(--cinza);
   font-weight: normal;
@@ -88,34 +88,37 @@ body {
 }
 
 @media screen and (min-width: 0) {
-  .register-restaurant {
+  .register-restaurant,
+  .header {
     width: 85%;
   }
-  .register-restaurant__header--title {
+  .header__title {
     font-size: 2rem;
   }
 
-  .register-restaurant__header--subtitle {
+  .header__subtitle {
     font-size: 1rem;
   }
 }
 @media screen and (min-width: 762px) {
-  .register-restaurant {
+  .register-restaurant,
+  .header {
     width: 75%;
     box-shadow: 5px 5px 2px 1px rgba(132, 132, 133, 0.2);
   }
 }
 
 @media screen and (min-width: 992px) {
-  .register-restaurant {
+  .register-restaurant,
+  .header {
     width: 50%;
   }
 
-  .register-restaurant__header--title {
+  .header__title {
     font-size: 2.5rem;
   }
 
-  .register-restaurant__header--subtitle {
+  .header__subtitle {
     font-size: 1.2rem;
   }
 }

@@ -12,3 +12,7 @@ Aplicação desenvolvida como desafio de diagnóstico e mapeamento da Unidade Te
 |    CSS3    | https://developer.mozilla.org/pt-BR/docs/Web/CSS/Reference |
 | JavaScript |                https://www.javascript.com/                 |
 |   JQuery   |                    https://jquery.com/                     |
+
+## Para abrir o projeto
+
+É necessário utilizar um servidor para que o programa possa ser executado, para evitar o erro de CORS ao importar e exportar módulos. Para isso, pode ser usada a extensão [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) do Visual Studio Code.
